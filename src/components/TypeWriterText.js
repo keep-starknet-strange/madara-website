@@ -65,7 +65,7 @@ const TypeWriterText = () => {
   return (
     <>
       <Title>
-        The beginning of something big
+        The birth of the Starknet Stack
         <Typewriter
           options={{
             autoStart: true,
@@ -76,7 +76,7 @@ const TypeWriterText = () => {
               .typeString(`<span class="text">Fractal scaling!</span>`)
               .pauseFor(2000)
               .deleteAll()
-              .typeString(`<span class="text">Enhances the Cairo VM.</span>`)
+              .typeString(`<span class="text">Unleash the power of Cairo.</span>`)
               .pauseFor(2000)
               .deleteAll()
               .typeString(`<span class="text">Blazing fast!</span>`)
