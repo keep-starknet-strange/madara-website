@@ -18,7 +18,7 @@ const ImageContainer = styled.div`
 const CoverPhoto = () => {
   return (
     <ImageContainer>
-      <img src={MadaraCover} alt="Cover Image" />
+      <img src={MadaraCover} alt="Madara Cover" />
     </ImageContainer>
   );
 };
