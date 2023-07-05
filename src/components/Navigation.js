@@ -164,13 +164,13 @@ const Navigation = () => {
             <div className="mobile">
               <Button
                 text="View Documentation"
-                link="https://docs.madara.wtf/"
+                link="https://docs.madara.zone/"
               />
             </div>
           </MenuItem>
         </Menu>
         <div className="desktop">
-          <Button text="View Documentation" link="https://docs.madara.wtf/" />
+          <Button text="View Documentation" link="https://docs.madara.zone/" />
         </div>
       </NavBar>
     </Section>
