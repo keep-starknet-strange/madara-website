@@ -140,7 +140,7 @@ const SubTitle = styled.span`
 `;
 const Text = styled.span`
   display: block;
-  font-size: ${(props) => props.theme.fontsm};
+  font-size: ${(props) => props.theme.fontmd};
   text-transform: capitalize;
   color: ${(props) => props.theme.body};
 
@@ -151,13 +151,16 @@ const Text = styled.span`
   }
 `;
 
-const RoadMapItem = ({ title, subtext, addToRef }) => {
+const RoadMapItem = ({ title, subtext1, subtext2, subtext3, subtext4, addToRef }) => {
   return (
     <Item ref={addToRef}>
       <ItemContainer>
         <Box>
           <SubTitle>{title} </SubTitle>
-          <Text>{subtext}</Text>
+          <Text>- {subtext1}</Text>
+          <Text>- {subtext2}</Text>
+          <Text>- {subtext3}</Text>
+          {subtext4 && <Text>- {subtext4}</Text>}
         </Box>
       </ItemContainer>
     </Item>
@@ -213,28 +216,32 @@ const Roadmap = () => {
           <Item>&nbsp;</Item>
           <RoadMapItem
             addToRef={addToRefs}
-            title="Madara Phase 1"
-            subtext="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat."
+            title="Compatibility with Public Starknet"
+            subtext1="Implement the necessary functionality to execute Starknet smart contracts within the Madara framework"
+            subtext2="Develop all required RPC endpoints to ensure full compatibility with Starknet"
+            subtext3="Ensure Madara works seamlessly with existing Starknet tools"
           />
           <RoadMapItem
             addToRef={addToRefs}
-            title="Build in the open"
-            subtext="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat."
+            title="Deploy your Starknet Appchain easily"
+            subtext1="Simplify the process of configuring and customizing Madara to meet the unique needs of each project"
+            subtext2="Showcase how to run an Appchain with Madara through a series of reference examples"
+            subtext3="Update the testing framework to use different runtime configurations, ensuring robustness and flexibility"
+            subtext4="Integrate with Rollup As A Service providers"
           />
           <RoadMapItem
             addToRef={addToRefs}
-            title="Kakarot Integration"
-            subtext="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat."
+            title="Proving / Data Availability"
+            subtext1="Establish integration with SHARP (Shared Prover of StarkWare) and Ethereum's Data Availability solutions"
+            subtext2="Enable Madara to settle on Public Starknet, effectively allowing the spin-up of an Appchain as a Starknet L3"
+            subtext3="Explore and integrate other Data Availability solutions to provide more options for users"
           />
           <RoadMapItem
             addToRef={addToRefs}
-            title="Stage 4"
-            subtext="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat."
-          />
-          <RoadMapItem
-            addToRef={addToRefs}
-            title="One click ZK/Validity proofs"
-            subtext="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat."
+            title="Performance"
+            subtext1="Continuously work on performance optimization to ensure Madara runs as efficiently as possible"
+            subtext2="Research and implement different storage databases and layouts to optimize data handling"
+            subtext3="Develop and implement modern, fast consensus mechanisms to enhance the performance and reliability of Madara"
           />
         </Items>
       </Container>
