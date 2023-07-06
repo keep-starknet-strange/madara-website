@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from "react";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import Loading from "../Loading";
 
 const CoverPhoto = lazy(() => import("../CoverPhoto"));
@@ -41,36 +41,6 @@ const Box = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-`;
-const rotate = keyframes`
-100%{
-  transform: rotate(1turn);
-}
-`;
-const Round = styled.div`
-  position: absolute;
-  bottom: 2rem;
-  right: 90%;
-  width: 6rem;
-  height: 6rem;
-  border: 1px solid ${(props) => props.theme.text};
-  border-radius: 50%;
-
-  img {
-    width: 100%;
-    height: auto;
-    animation: ${rotate} 6s linear infinite reverse;
-  }
-  @media (max-width: 64em) {
-    width: 4rem;
-    height: 4rem;
-    left: none;
-    right: 2rem;
-    bottom: 100%;
-  }
-  @media (max-width: 48em) {
-    right: 1rem;
-  }
 `;
 
 const Circle = styled.span`
