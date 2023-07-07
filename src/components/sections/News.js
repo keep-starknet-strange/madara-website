@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Tweet } from 'react-tweet'
+import { Tweet } from "react-tweet";
 
 const Section = styled.section`
   min-height: 100vh;
@@ -45,7 +45,7 @@ const Container = styled.div`
   }
 
   .react-tweet-theme {
-    border: 1px solid rgba(230, 38, 0, .3);
+    border: 1px solid rgba(230, 38, 0, .4);
   
 `;
 

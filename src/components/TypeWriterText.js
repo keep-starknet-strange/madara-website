@@ -76,7 +76,9 @@ const TypeWriterText = () => {
               .typeString(`<span class="text">Fractal scaling!</span>`)
               .pauseFor(2000)
               .deleteAll()
-              .typeString(`<span class="text">Unleash the power of Cairo.</span>`)
+              .typeString(
+                `<span class="text">Unleash the power of Cairo.</span>`
+              )
               .pauseFor(2000)
               .deleteAll()
               .typeString(`<span class="text">Blazing fast!</span>`)
