@@ -6,7 +6,6 @@ import Accordion from "../Accordion";
 
 const Section = styled.section`
   min-height: 100vh;
-  height: auto;
   width: 100vw;
   background-color: ${(props) => props.theme.text};
   position: relative;

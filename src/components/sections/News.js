@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Tweet } from 'react-tweet'
 
 const Section = styled.section`
   min-height: 100vh;
@@ -25,21 +26,27 @@ const Title = styled.h1`
 `;
 
 const Container = styled.div`
-  width: 75%;
+  width: 85%;
   margin: 2rem auto;
 
   display: flex;
+  gap: 25px;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  align-items: flex-start;
 
   @media (max-width: 64em) {
     width: 80%;
+    flex-direction: column;
   }
   @media (max-width: 48em) {
     width: 90%;
     justify-content: center;
+    flex-direction: column;
   }
+
+  .react-tweet-theme {
+    border: 1px solid rgba(230, 38, 0, .3);
+  
 `;
 
 const News = () => {
@@ -47,7 +54,10 @@ const News = () => {
     <Section id="news">
       <Title>News</Title>
       <Container>
-        {/* use react twitter embeded to show select tweets from Madara */}
+        <Tweet id="1674815181556269065" />
+        <Tweet id="1675809439188746241" />
+        <Tweet id="1676857274483228672" />
+        <Tweet id="1664571583795453952" />
       </Container>
     </Section>
   );
