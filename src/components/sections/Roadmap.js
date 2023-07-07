@@ -151,7 +151,14 @@ const Text = styled.span`
   }
 `;
 
-const RoadMapItem = ({ title, subtext1, subtext2, subtext3, subtext4, addToRef }) => {
+const RoadMapItem = ({
+  title,
+  subtext1,
+  subtext2,
+  subtext3,
+  subtext4,
+  addToRef,
+}) => {
   return (
     <Item ref={addToRef}>
       <ItemContainer>
