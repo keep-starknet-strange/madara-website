@@ -18,16 +18,20 @@ const LogoText = styled.h1`
   }
 `;
 
+const StyledLink = styled(Link)`
+  display: flex;
+`;
+
 const Logo = () => {
   return (
     <LogoText>
-      <Link
+      <StyledLink
         to="https://github.com/keep-starknet-strange/madara"
         target="_blank"
         rel="noreferrer"
       >
         <LogoSVG style={{ width: "56px", height: "56px" }} />
-      </Link>
+      </StyledLink>
     </LogoText>
   );
 };
