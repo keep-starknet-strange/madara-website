@@ -129,43 +129,43 @@ const Carousel = () => {
       >
         <SwiperSlide>
           {" "}
-          <img width={500} height={400} src={img1} alt="The Weirdos" />{" "}
+          <img width={500} height={400} src={img1} alt="Madara Telegram Sticker" />{" "}
         </SwiperSlide>
         <SwiperSlide>
           {" "}
-          <img width={500} height={400} src={img2} alt="The Weirdos" />{" "}
+          <img width={500} height={400} src={img2} alt="Madara Telegram Sticker" />{" "}
         </SwiperSlide>
         <SwiperSlide>
           {" "}
-          <img width={500} height={400} src={img3} alt="The Weirdos" />{" "}
+          <img width={500} height={400} src={img3} alt="Madara Telegram Sticker" />{" "}
         </SwiperSlide>
         <SwiperSlide>
           {" "}
-          <img width={500} height={400} src={img4} alt="The Weirdos" />{" "}
+          <img width={500} height={400} src={img4} alt="Madara Telegram Sticker" />{" "}
         </SwiperSlide>
         <SwiperSlide>
           {" "}
-          <img width={500} height={400} src={img5} alt="The Weirdos" />{" "}
+          <img width={500} height={400} src={img5} alt="Madara Telegram Sticker" />{" "}
         </SwiperSlide>
         <SwiperSlide>
           {" "}
-          <img width={500} height={400} src={img6} alt="The Weirdos" />{" "}
+          <img width={500} height={400} src={img6} alt="Madara Telegram Sticker" />{" "}
         </SwiperSlide>
         <SwiperSlide>
           {" "}
-          <img width={500} height={400} src={img7} alt="The Weirdos" />{" "}
+          <img width={500} height={400} src={img7} alt="Madara Telegram Sticker" />{" "}
         </SwiperSlide>
         <SwiperSlide>
           {" "}
-          <img width={500} height={400} src={img8} alt="The Weirdos" />{" "}
+          <img width={500} height={400} src={img8} alt="Madara Telegram Sticker" />{" "}
         </SwiperSlide>
         <SwiperSlide>
           {" "}
-          <img width={500} height={400} src={img9} alt="The Weirdos" />{" "}
+          <img width={500} height={400} src={img9} alt="Madara Telegram Sticker" />{" "}
         </SwiperSlide>
         <SwiperSlide>
           {" "}
-          <img width={500} height={400} src={img10} alt="The Weirdos" />{" "}
+          <img width={500} height={400} src={img10} alt="Madara Telegram Sticker" />{" "}
         </SwiperSlide>
       </Swiper>
     </Container>
